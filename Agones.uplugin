@@ -1,0 +1,24 @@
+{
+  "CanContainContent": false,
+  "Category": "Netspeak",
+  "CreatedBy": "mail@domgreen.com",
+  "CreatedByURL": "https://netspeakgames.com/",
+  "Description": "Agones SDK for Unreal, wrapping the Agones REST API.",
+  "DocsURL": "https://agones.dev/site/docs/guides/client-sdks/rest/",
+  "FileVersion": 3,
+  "FriendlyName": "Agones",
+  "Installed": false,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "MarketplaceURL": "",
+  "Modules": [
+    {
+      "LoadingPhase": "PreLoadingScreen",
+      "Name": "Agones",
+      "Type": "Runtime"
+    }
+  ],
+  "SupportURL": "",
+  "Version": 1,
+  "VersionName": "0.0.1"
+}
