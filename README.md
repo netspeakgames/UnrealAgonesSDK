@@ -110,9 +110,9 @@ Within the Unreal [GameMode](https://docs.unrealengine.com/en-US/API/Runtime/Eng
 funtions that can be used to fit in with making calls out to Agones.
 
 A few examples are:
-- `RegisterServer` to call `Ready`
-- `RegisterPlayer` to call `PlayerConnect`
-- `UnregisterPlayer` to call `PlayerDisconnect`
+- `RegisterServer` to call `SetLabel`, `SetPlayerCapacity`
+- `PostLogin` to call `PlayerConnect`
+- `NotifyLogout` to call `PlayerDisconnect`
 
 ## Alternative Implementations
 
