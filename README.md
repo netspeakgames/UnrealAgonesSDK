@@ -52,9 +52,10 @@ ATestGameMode::ATestGameMode()
 ```
 
 - Use the Agones component to call PlayerReady
-```
+```c++
 void APlatformGameSession::PostLogin(APlayerController* NewPlayer)
 {
+  // Empty brances are for callbacks on success and errror.
   AgonesSDK->PlayerConnect("netspeak-player", {}, {});
 }
 ```
