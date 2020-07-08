@@ -51,6 +51,14 @@ ATestGameMode::ATestGameMode()
 }
 ```
 
+- Use the Agones component to call PlayerReady
+```
+void APlatformGameSession::PostLogin(APlayerController* NewPlayer)
+{
+  AgonesSDK->PlayerConnect("netspeak-player", {}, {});
+}
+```
+
 #### Using Blueprints
 - Add Component to your Blueprint GameMode
 ![component](/docs/img/01_bp_component.PNG)
@@ -65,10 +73,11 @@ ATestGameMode::ATestGameMode()
 Additional methods have been added for ease of use (both of which are enabled by default):
 
 - Connect
-  - will call /gameserver till a succesful response is returned and then call ready.
+  - will call `/gameserver` till a succesful response is returned and then call `/ready`.
   - disabled by setting `bDisableAutoConnect` to `true`.
+  - An event is broadcast with the `GameServer` data once the `/gameserver` call succeeds.
 - Health
-  - calls /health endpoint on supplied rate
+  - calls `/health` endpoint on supplied rate
   - enabled by default with 10 second rate
   - disabled by default by setting `HealthRateSeconds` to `0`.
 
