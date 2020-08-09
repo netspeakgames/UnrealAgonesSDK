@@ -1,4 +1,15 @@
-﻿# Agones Unreal SDK
+﻿# Project adopted as official Agones Unreal SDK
+
+We are delighted that this project has been adopted as the official Agones Unreal SDK from version `1.8.0`.
+
+For more information, downloading and contributing to the project please see:
+
+- https://agones.dev/site/docs/guides/client-sdks/unreal/
+- https://github.com/googleforgames/agones/tree/master/sdks/unreal/Agones
+
+Please visit the official version for the lastest updates and to download.
+
+# Agones Unreal SDK
 
 Agones is a multilayer dedicated game server scaling and orchestration platform that can run anywhere Kubernetes can run.
 
